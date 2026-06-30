@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrganizAI TDM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>ORGANIZAí - BRADESCO MASSAS</h1>
+        <p>
+          Cole o conteúdo TXT gerado pelo TDM ou faça upload do arquivo. Os dados serão organizados em uma tabela pronta para uso.
+        </p>
+
+        <div class="actions">
+          <div id="dropzone" class="dropzone">
+            Arraste e solte o arquivo TXT aqui ou clique para selecionar
+          </div>
+          <input id="fileInput" type="file" accept=".txt,text/plain" />
+          <button id="processButton" class="primary" type="button">Processar arquivo</button>
+          <button id="copyButton" class="secondary" type="button">Copiar resultado</button>
+          <button id="clearButton" class="secondary" type="button">Limpar</button>
+        </div>
+
+        <textarea id="inputTxt" placeholder="Cole aqui o conteúdo do TXT do TDM..."></textarea>
+
+        <div id="summary" class="summary"></div>
+        <div id="resultado"></div>
+      </section>
+    </main>
+
+    <script src="parser.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
